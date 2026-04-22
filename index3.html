@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea Modelo de Caja - HTML y CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>TAREA: MODELO DE CAJA CON HTML Y CSS</h1>
+    </header>
+
+    <nav>
+        <a href="#ejercicio1" class="caja-obligatoria">Ejercicio 1</a>
+        <a href="#ejercicio2" class="caja-obligatoria">Ejercicio 2</a>
+        <a href="#ejercicio3" class="caja-obligatoria">Ejercicio 3</a>
+    </nav>
+
+    <main>
+        <p>Desarrollo de página web aplicando etiquetas contenedoras y el modelo de caja con medidas específicas.</p>
+    </main>
+
+    <footer>
+        <p>Nombre del Estudiante: Alexander Gabriel Alarcón Otazú</p>
+    </footer>
+
+    <hr>
+
+    <section id="ejercicio1">
+        <h2>Ejercicio 1: Tarjetas</h2>
+        <article class="caja-obligatoria tarjeta">
+            <p>Este es el primer artículo con una <span>palabra</span> resaltada.</p>
+        </article>
+        <article class="caja-obligatoria tarjeta">
+            <p>Este es el segundo artículo con una <span>palabra</span> resaltada.</p>
+        </article>
+        <article class="caja-obligatoria tarjeta">
+            <p>Este es el tercer artículo con una <span>palabra</span> resaltada.</p>
+        </article>
+    </section>
+
+    <hr>
+
+    <section id="ejercicio2">
+        <h2>Ejercicio 2: Caja Adicional</h2>
+        <div class="contenedor-adicional">
+            <article class="caja-ejercicio-2">
+                <p>Este es el primer párrafo del artículo para demostrar la distribución de texto dentro del modelo de caja.</p>
+                <p>Este es el segundo párrafo, asegurando que el contenido se vea bien organizado y separado de los bordes.</p>
+            </article>
+        </div>
+    </section>
+
+    <hr>
+
+    <div id="ejercicio3">
+        <h2>Ejercicio 3: Estructura Web</h2>
+        
+        <header class="caja-obligatoria bloque-web">Encabezado</header>
+        
+        <nav class="caja-obligatoria bloque-web">Menú</nav>
+        
+        <main class="bloque-web">
+            <article class="caja-obligatoria">Contenido Principal</article>
+            <aside class="caja-obligatoria">Barra Lateral</aside>
+        </main>
+        
+        <footer class="caja-obligatoria bloque-web">Pie de Página</footer>
+    </div>
+
+</body>
+</html>
