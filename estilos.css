@@ -1,0 +1,74 @@
+/* Estilos para que se vea como el modelo del PDF */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d1d9e1; /* Fondo gris claro de la página */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Encabezado Naranja */
+header {
+    background-color: #ff9800;
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+/* Barra de Navegación Verde */
+nav {
+    background-color: #4ade80;
+    padding: 15px;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Contenedor Principal para las dos columnas */
+.main-container {
+    display: flex;
+    gap: 20px;
+}
+
+/* Bloque Gris (Información Principal) */
+.content-area {
+    background-color: #757575;
+    flex: 3;
+    padding: 25px;
+    border-radius: 15px;
+    color: white;
+}
+
+/* Bloque Azul (Información Adicional) */
+.sidebar {
+    background-color: #60a5fa;
+    flex: 1;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+/* Las "Cards" verdes dentro del bloque gris */
+.info-card {
+    background-color: #a3e635;
+    color: black;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+/* Pie de página Naranja */
+footer {
+    background-color: #fb923c;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
