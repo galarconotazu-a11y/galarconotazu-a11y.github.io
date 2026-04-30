@@ -1,0 +1,219 @@
+:root {
+  /* Paleta de colores */
+  --negro:       #0a0a0a;
+  --rojo:        #c0392b;
+  --rojo-oscuro: #8b0000;
+  --rojo-neon:   #ff2d20;
+  --blanco:      #f5f0eb;
+  --crema:       #e8ddd0;
+  --gris-medio:  #2a2a2a;
+  --gris-claro:  #3d3d3d;
+  --oro:         #c9a84c;
+  --oro-claro:   #e8c97a;
+
+  /* Tipografías */
+  --fuente-titulo: 'Cinzel Decorative', cursive;
+  --fuente-cuerpo: 'Noto Serif', serif;
+  --fuente-ui:     'Rajdhani', sans-serif;
+
+  /* Efectos */
+  --sombra-roja: 0 0 30px rgba(192, 57, 43, 0.4);
+  --sombra-oscura: 0 8px 32px rgba(0,0,0,0.6);
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--negro);
+  color: var(--blanco);
+  font-family: var(--fuente-cuerpo);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  background: rgba(10, 10, 10, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(192, 57, 43, 0.35);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+  height: 72px;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+
+.nav-logo .kanji {
+  font-size: 2rem;
+  color: var(--rojo);
+  text-shadow: var(--sombra-roja);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.nav-links a {
+  font-family: var(--fuente-ui);
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--crema);
+  font-weight: 600;
+  transition: 0.3s;
+  position: relative;
+}
+
+.nav-links a:hover { color: var(--rojo-neon); }
+
+.nav-cta {
+  background: var(--rojo);
+  color: var(--blanco) !important;
+  padding: 0.5rem 1.25rem;
+  border-radius: 2px;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: left;
+}
+
+.hero-contenido {
+  z-index: 2;
+  max-width: 800px;
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-family: var(--fuente-titulo);
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  margin-bottom: 1rem;
+}
+
+.hero h1 .acento {
+  color: var(--rojo);
+  text-shadow: var(--sombra-roja);
+}
+
+.hero-kanji-grande {
+  font-size: 8rem;
+  color: rgba(192, 57, 43, 0.1);
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  z-index: 1;
+}
+
+.btn-primario {
+  font-family: var(--fuente-ui);
+  padding: 1rem 2.5rem;
+  background: var(--rojo);
+  color: white;
+  text-decoration: none;
+  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.btn-primario:hover {
+  background: var(--rojo-oscuro);
+  transform: scale(1.05);
+}
+
+.cajas-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.caja {
+  flex: 1 1 300px;
+  background: var(--gris-medio);
+  padding: 2.5rem;
+  border-top: 4px solid var(--rojo);
+  transition: 0.4s;
+  display: flex;
+  flex-direction: column;
+}
+
+.caja:hover {
+  transform: translateY(-10px);
+  border-top-color: var(--oro);
+  box-shadow: var(--sombra-roja);
+}
+
+.horarios-tabla {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid var(--gris-claro);
+}
+
+.horario-fila {
+  display: flex;
+  border-bottom: 1px solid var(--gris-claro);
+}
+
+.horario-fila.cabecera {
+  background: var(--rojo-oscuro);
+  font-family: var(--fuente-ui);
+}
+
+.horario-celda {
+  flex: 1;
+  padding: 1rem;
+  text-align: center;
+}
+
+.contacto-form {
+  background: var(--gris-medio);
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.form-grupo input, .form-grupo select, .form-grupo textarea {
+  width: 100%;
+  padding: 0.8rem;
+  background: rgba(0,0,0,0.3);
+  border: 1px solid var(--gris-claro);
+  color: white;
+  outline: none;
+}
+
+.form-grupo input:focus {
+  border-color: var(--rojo);
+}
+
+@media (max-width: 768px) {
+  nav { padding: 0 1rem; }
+  .nav-links { display: none; } /* Podrías agregar un menú hamburguesa aquí */
+  .hero h1 { font-size: 3rem; }
+  .estadisticas-interior { flex-direction: column; align-items: center; }
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Academia de Karate HIROSHIMA KARATE DO">
+  <title>HIROSHIMA KARATE DO</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Noto+Serif:ital,wght@0,400;0,600;1,400&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="#inicio" class="nav-logo" aria-label="Volver al inicio">
+        <span class="kanji" aria-hidden="true">武</span>
+        <div class="nombre">
+          HIROSHIMA KARATE DO
+          <span>Karate &amp; Artes Marciales</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#disciplinas">Disciplinas</a></li>
+        <li><a href="#instructores">Instructores</a></li>
+        <li><a href="#horarios">Horarios</a></li>
+        <li><a href="#contacto" class="nav-cta">Inscríbete Ahora</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-overlay"></div> <span class="hero-kanji-grande" aria-hidden="true">武道</span>
+      
+      <div class="hero-contenido">
+        <div class="hero-etiqueta">Tradición & Disciplina desde 2003</div>
+        <h1>HIROSHIMA<br /><span class="acento">KARATE</span> DO</h1>
+        <p>
+          No solo enseñamos a luchar, forjamos el carácter. Únete a la comunidad líder en artes marciales del Cusco y descubre tu máximo potencial.
+        </p>
+        <div class="hero-botones">
+          <a href="#contacto" class="btn-primario">Clase de Prueba Gratis</a>
+          <a href="#disciplinas" class="btn-secundario">Explorar Caminos</a>
+        </div>
+      </div>
+    </section>
+
+    <article class="estadisticas-banda">
+      <div class="estadisticas-interior">
+        <div class="stat">
+          <div class="stat-numero">20<span>+</span></div>
+          <div class="stat-texto">Años de Trayectoria</div>
+        </div>
+        <div class="stat">
+          <div class="stat-numero">450<span>+</span></div>
+          <div class="stat-texto">Cinturones Activos</div>
+        </div>
+        <div class="stat">
+          <div class="stat-numero">38<span></span></div>
+          <div class="stat-texto">Títulos Nacionales</div>
+        </div>
+        <div class="stat">
+          <div class="stat-numero">6<span></span></div>
+          <div class="stat-texto">Maestros Dan</div>
+        </div>
+      </div>
+    </article>
+
+    <section id="disciplinas" class="contenedor">
+      <div class="separador"><span class="separador-kanji">空</span></div>
+      <header class="text-center">
+        <p class="seccion-subtitulo">Domina el Arte</p>
+        <h2 class="seccion-titulo">Nuestros Programas</h2>
+      </header>
+      
+      <div class="linea-divisor"></div>
+
+      <div class="cajas-grid">
+        <div class="caja" data-num="01">
+          <div class="caja-icono">🥋</div>
+          <h3>Shotokan Tradicional</h3>
+          <p>Control y precisión. El estilo fundamental para desarrollar una base técnica inquebrantable.</p>
+          <div class="nivel">
+            <span class="nivel-label">Dificultad</span>
+            <div class="nivel-puntos">
+              <span class="punto activo"></span><span class="punto activo"></span><span class="punto activo"></span><span class="punto"></span><span class="punto"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="caja" data-num="02">
+          <div class="caja-icono">⚡</div>
+          <h3>Kyokushin Full Contact</h3>
+          <p>Resistencia y fuerza. Preparación física de alto impacto para los guerreros más exigentes.</p>
+          <div class="nivel">
+            <span class="nivel-label">Dificultad</span>
+            <div class="nivel-puntos">
+              <span class="punto activo"></span><span class="punto activo"></span><span class="punto activo"></span><span class="punto activo"></span><span class="punto activo"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="caja" data-num="03">
+          <div class="caja-icono">🌸</div>
+          <h3>Pequeños Samuráis</h3>
+          <p>Psicomotricidad y valores para niños de 4 a 12 años en un ambiente seguro y motivador.</p>
+          <div class="nivel">
+            <span class="nivel-label">Dificultad</span>
+            <div class="nivel-puntos">
+              <span class="punto activo"></span><span class="punto"></span><span class="punto"></span><span class="punto"></span><span class="punto"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="bg-oscuro">
+      <div class="contenedor-flex">
+        <div class="contacto-info">
+          <h2 class="seccion-titulo">¿Listo para el desafío?</h2>
+          <p>Visítanos en nuestra sede central o solicita información personalizada.</p>
+          
+          <div class="contacto-item">
+            <span class="icon">📍</span>
+            <p>Coliseo Cerrado Casa de la Juventud Puerta N°10 interior</p>
+          </div>
+        </div>
+
+        <form class="contacto-form" id="inscripcionForm">
+          <div class="form-titulo">Solicitud de Ingreso</div>
+          
+          <div class="form-row">
+            <div class="form-grupo">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" required placeholder="Ej. Juan">
+            </div>
+            <div class="form-grupo">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="contacto@mail.com">
+            </div>
+          </div>
+
+          <div class="form-grupo">
+            <label for="disciplina">Programa de Interés</label>
+            <select id="disciplina" name="disciplina">
+              <option value="shotokan">Shotokan Tradicional</option>
+              <option value="kyokushin">Kyokushin Full Contact</option>
+              <option value="infantil">Pequeños Samuráis</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn-primario">Enviar Información</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-interior">
+      <div class="footer-logo">Bushido <span>Academy</span> © 2026</div>
+      <p class="footer-copy">Desarrollado para el Proyecto Final de Programación Web</p>
+    </div>
+  </footer>
+
+</body>
+</html>
